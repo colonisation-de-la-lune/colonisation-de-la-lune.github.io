@@ -121,24 +121,36 @@
             console.log(`Set content`);
             function display() {
                 document.getElementById(`body`).style.background = content[page].background;
-                console.log(`Display body`);
                 document.getElementById(`heading`).innerHTML = content[page].heading;
-                console.log(`Display heading`);
                 document.getElementById(`details`).innerHTML = content[page].details;
-                console.log(`Display details`);
+                console.log(`Switched page`);
             }
             function back() {
                 page --;
                 page = Math.max(0, page);
                 display();
-                console.log(`Back button`);
+                console.log(`Back`);
             }
             function next() {
                 page ++;
                 page = Math.min(14, page);
                 display();
-                console.log(`Next button`);
+                console.log(`Next`);
             }
+            document.addEventListener(`keydown`, (e) => {
+                switch(e) {
+                    case `ArrowLeft`:
+                        back();
+                        console.log(`Via keypress`);
+                        break;
+                    case `ArrowRight`:
+                        next();
+                        console.log(`Via keypress`);
+                        break;
+                    case default:
+                        console.log(`Key is not an arrow.`);
+                        break;
+                }
         </script>
     </head>
     <body id="body" style="background: url(https://i.imgur.com/iHSvpQB.png)">
