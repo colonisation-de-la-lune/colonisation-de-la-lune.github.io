@@ -1,0 +1,162 @@
+<html>
+    <head>
+        <title>
+            Colonisation de la Lune
+        </title>
+        <style>
+            @font-face {
+                font-family: 'Google Sans';
+                font-style: normal;
+                font-weight: 400;
+                src: url(https://fonts.gstatic.com/s/googlesans/v42/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJlrpynSEg.woff2) format('woff2');
+                unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            }
+            @font-face {
+                font-family: 'Google Sans';
+                font-style: normal;
+                font-weight: 400;
+                src: url(https://fonts.gstatic.com/s/googlesans/v42/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJllpyk.woff2) format('woff2');
+                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+            #heading, #details {
+                font-family: 'Google Sans', Arial, Helvetica, sans-serif;
+                text-align: center;
+            }
+            #content {
+                width: 40vw;
+                height: 50vh;
+                border-color: #000;
+                border: 1px;
+                margin-left: 30vw;
+                margin-right: 30vw;
+                margin-top: calc(25vh - 10px);
+                margin-bottom: calc(25vh - 10px);
+                background-color: #FFF;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        </style>
+        <script type="text/javascript">
+            var page = 0;
+            console.log(`Set page`);
+            var content = [
+                {
+                    heading: `Bonjour 6/7-1 et Mlle Mahncke !`,
+                    details: `Aujourd'hui, je vais parler de cette question :`,
+                    background: `url(https://i.imgur.com/iHSvpQB.png)`
+                },
+                {
+                    heading: `Question`,
+                    details: `Devrions-nous construire une colonie sur la Lune et pouvons-nous trouver un moyen d'y survivre ? Est-il réaliste de le faire ? À quoi pourrait ressembler la colonie ? Quels sont les avantages et les inconvénients ? Quels sont les problèmes que nous pourrions rencontrer et quelles sont les solutions possibles ?`,
+                    background: `url(https://i.imgur.com/b8yI25v.png)`
+                },
+                {
+                    heading: `Devrions-nous construire une colonie sur la Lune et pouvons-nous trouver un moyen d'y survivre ? Est-il réaliste de la faire ?`,
+                    details: `Oui, c'est possible et réaliste de construire une colonie sur la Lune et trouver un moyen d'y survivre.`,
+                    background: `url(https://i.imgur.com/yUCvj9C.png)`
+                },
+                {
+                    heading: `À quoi pourrait ressembler la colonie ?`,
+                    details: `La colonie peut ressemble comme ceci.`,
+                    background: `url(https://i.imgur.com/RiXrtVS.png)`,
+                },
+                {
+                    heading: `Quels sont les avantages ?`,
+                    details: `Dans les prochaines parties, je parlerai des avantages.`,
+                    background: `#007F00`
+                },
+                {
+                    heading: `Hélium-3`,
+                    details: `Hélium-3 est une resource qui est très rare sur la Terre mais plus commun sur la Lune est peut être moin cher. C'est un carburant attractif pour les réacteurs à fusion nucléaire. Beaucoup des pays ont exprimé l'intérêt sur l'usage d'Hélium-3.`,
+                    background: `url(https://i.imgur.com/SWhIDNn.png)`
+                },
+                {
+                    heading: `L'eau et moin des carburants`,
+                    details: `Il y a de l'eau sur la Lune. L'eau et composé d'hydrogène et d'oxygène. L'hydrogène et l'oxygène en liquide peut être un carburant pour les fusées. Ce carburant peut être utilié pour lancer les fusées. Ça coûte moin de carburant parce que la Lune n'a pas que un-sixième de la gravité de la Terre.`,
+                    background: `url(https://i.imgur.com/mt5dGsH.png)`
+                },
+                {
+                    heading: `Défis et solutions possibles`,
+                    details: `Voici les défis et les solutions possibles de la colonisation de la Lune.`,
+                    background: `url(https://i.imgur.com/WPIxxyn.png)`
+                },
+                {
+                    heading: `Produire l'énergie pour décoller de la Terre`,
+                    details: `Comme j'ai dit, les carburants peuvent être fait avec de l'eau.`,
+                    background: `url(https://i.imgur.com/ycJ61jF.png)`
+                },
+                {
+                    heading: `Produire la gravité`,
+                    details: `La gravité artificiele peut être produit avec un rouet.`,
+                    background: `url(https://i.imgur.com/lu6HbAx.png)`
+                },
+                {
+                    heading: `Températures extrêmes`,
+                    details: `Les astronautes peuvent survivre les températures extrêmes avec de les appareils de chauffage et de l'isolant sur les combinaisons spatiales.`,
+                    background: `url(https://i.imgur.com/E3EUQiV.png)`
+                },
+                {
+                    heading: `Radiation`,
+                    details: `Les astronautes peuvent vivre sous la Lune.`,
+                    background: `url(https://i.imgur.com/Gaglzmf.png)`
+                },
+                {
+                    heading: `Nourriture`,
+                    details: `Les chercheurs ont dévelopé les serres pour grandir les plantes sans sol.`,
+                    background: `url(https://i.imgur.com/MzuNYZC.png)`
+                },
+                {
+                    heading: `Mon présentation se termine.`,
+                    details: `Merci pour écouter mon présentation. (Continuer pour les sources.)`,
+                    background: `url(https://i.imgur.com/rD5J7dr.png)`
+                },
+                {
+                    heading: `Sources :`,
+                    details: `<a href='https://www.youtube.com/watch?v=NtQkz0aRDe8'>https://www.youtube.com/watch?v=NtQkz0aRDe8</a><br><a href='https://www.spaceflightinsider.com/missions/human-spaceflight/science-journalist-outlines-challenges-of-settling-the-moon-and-mars/'>https://www.spaceflightinsider.com/missions/human-spaceflight/science-journalist-outlines-challenges-of-settling-the-moon-and-mars/</a><br><a href='https://www.energy.gov/eere/fuelcells/hydrogen-production-processes'>https://www.energy.gov/eere/fuelcells/hydrogen-production-processes</a><br><a href='https://www.realclearscience.com/blog/2020/10/29/3_ways_to_make_artificial_gravity_in_space_including_a_holy_grail_method.html'>https://www.realclearscience.com/blog/2020/10/29/3_ways_to_make_artificial_gravity_in_space_including_a_holy_grail_method.html</a><br><a href='https://www.news18.com/news/buzz/how-do-astronauts-survive-in-extreme-temperatures-in-space-we-have-the-answer-1875039.html'>https://www.news18.com/news/buzz/how-do-astronauts-survive-in-extreme-temperatures-in-space-we-have-the-answer-1875039.html</a><br><a href='https://www.scientificamerican.com/article/can-a-moon-base-be-safe-for-astronauts/'>https://www.scientificamerican.com/article/can-a-moon-base-be-safe-for-astronauts/</a><br><a href='https://www.technologyreview.com/2010/09/15/261831/growing-food-fit-for-the-moon/'>https://www.technologyreview.com/2010/09/15/261831/growing-food-fit-for-the-moon/</a><br><a href='https://www.herox.com/blog/954-what-resources-could-we-find-on-the-moon-here-are'>https://www.herox.com/blog/954-what-resources-could-we-find-on-the-moon-here-are</a><br><a href='https://www.theverge.com/2018/8/23/17769034/nasa-moon-lunar-water-ice-mining-propellant-depots'>https://www.theverge.com/2018/8/23/17769034/nasa-moon-lunar-water-ice-mining-propellant-depots</a><br><a href='https://psmag.com/environment/colonize-moon-much-cost-81543'>https://psmag.com/environment/colonize-moon-much-cost-81543</a>`,
+                    background: `black`
+                }
+            ];
+            console.log(`Set content`);
+            function display() {
+                document.getElementById(`body`).style.background = content[page].background;
+                console.log(`Display body`);
+                document.getElementById(`heading`).innerHTML = content[page].heading;
+                console.log(`Display heading`);
+                document.getElementById(`details`).innerHTML = content[page].details;
+                console.log(`Display details`);
+            }
+            function back() {
+                page --;
+                page = Math.max(0, page);
+                display();
+                console.log(`Back button`);
+            }
+            function next() {
+                page ++;
+                page = Math.min(14, page);
+                display();
+                console.log(`Next button`);
+            }
+        </script>
+    </head>
+    <body id="body" style="background: url(https://i.imgur.com/iHSvpQB.png)">
+        <div id="content">
+            <h1 id="heading">
+                Bonjour 6/7-1 et Mlle Mahncke !
+            </h1>
+            <p id="details">
+                Aujourd'hui, je vais parler de cette question&nbsp;:
+            </p>
+            <div align="center">
+                <button id="back" class="button" onclick="back()">
+                    Back
+                </button>
+                <button id="next" class="button" onclick="next()">
+                    Next
+                </button>
+            </div>
+        </div>
+    </body>
+</html>
