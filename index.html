@@ -40,7 +40,6 @@
         </style>
         <script type="text/javascript">
             var page = 0;
-            console.log(`Set page`);
             var content = [
                 {
                     heading: `Bonjour 6/7-1 et Mlle Mahncke !`,
@@ -118,26 +117,20 @@
                     background: `black`
                 }
             ];
-            console.log(`Set content`);
             function display() {
                 document.getElementById(`body`).style.background = content[page].background;
-                console.log(`Display body`);
                 document.getElementById(`heading`).innerHTML = content[page].heading;
-                console.log(`Display heading`);
                 document.getElementById(`details`).innerHTML = content[page].details;
-                console.log(`Display details`);
             }
             function back() {
                 page --;
                 page = Math.max(0, page);
                 display();
-                console.log(`Back button`);
             }
             function next() {
                 page ++;
                 page = Math.min(14, page);
                 display();
-                console.log(`Next button`);
             }
         </script>
     </head>
